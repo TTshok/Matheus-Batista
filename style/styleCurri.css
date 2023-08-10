@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;/*altura de 100% o VH é viewport elementos adequados a cada proporção*/
+    box-sizing: border-box;/*para img não passar do limite do body*/
+    background-color: black;
+    color: #f6f6f6;
+}
+main{
+    padding: 5%;
+}
+.principal{
+    display: flex;
+}
+.img{
+    background-color: rgb(51, 31, 70);
+    border-radius: 75px;  
+    width: 20%;
+    height: 20%;
+    text-align: center;
+}
+.pc{
+    border-radius: 400px;
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+}
