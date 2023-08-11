@@ -12,7 +12,9 @@
     margin: 0;
     padding: 0;
 }
-
+strong{
+    color: var(--cor--terciaria);
+}
 body{
     /*height: 100vh;/*altura de 100% o VH é viewport elementos adequados a cada proporção*/
     box-sizing: border-box;/*para img não passar do limite do body*/

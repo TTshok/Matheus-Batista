@@ -1,31 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-
-
+:root{
+    --cor-primaria: #232931;
+    --cor-secundaria:#4ECCA3;
+    --cor--terciaria:#EEEEEE;
+}
 body{
     height: 100vh;/*altura de 100% o VH é viewport elementos adequados a cada proporção*/
     box-sizing: border-box;/*para img não passar do limite do body*/
-    background-color: black;
-    color: #f6f6f6;
-}
-main{
-    padding: 5%;
+    background-color:var(--cor-primaria);
+    color: var(--cor--terciaria);
+    font-family: 'Montserrat', sans-serif;
+    
 }
 .principal{
+    width: 95%;/*largura*/
+    text-align: justify;
     display: flex;
+    flex-direction: column;/*direção dos FlexBox*/
+    gap: 20px;
+    padding: 5% 5% 5% 5%;
+   
 }
 .img{
-    background-color: rgb(51, 31, 70);
-    border-radius: 75px;  
-    width: 20%;
+    background-color: var(--cor-secundaria);
+    border-radius: 35%;  
+    width: 30%;
     height: 20%;
     text-align: center;
 }
 .pc{
-    border-radius: 400px;
+    border-radius: 50%;
     width: 80%;
     height: 80%;
     padding: 10%;
+}
+.principal_2{
+    display: flex; /*para todos os elementos ficarem flexiveis*/
+    align-items: center; /*para os itens ficarem no centro*/
+    justify-content: flex-start;
+    gap: 25px;
+}
+.principal__nome{
+    font-size: 2.1rem;
+}
+.contatos{
+    display: flex;
+    gap: 45px;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0% 0% 0%;
+    
+}
+.email{
+    padding: 5% 0% 0% 0%;
+}
+
+.sub_tema{
+    color: var(--cor-primaria);
+    width: 95%;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 25px;
+    font-family: 'Krona One', sans-serif;
+    padding: 1% 0% 1% 0% ;
+}
+.dados{
+    display: flex;
+    gap: 50%;
+    letter-spacing: normal;
+}
+.objetivos_txt{
+    width: 95%;
+   
+}
+.form_acad{
+    display: flex;
+    gap: 1%;
+    width: 95%;
+}
+.teste{
+    padding: 0% 0% 0% 30%;
+}
+
+.experiencia{
+    display: flex;
+    padding: 0% 1% 0% 0%;
+    width: 95%;
+}
+.estagio{
+    padding: 0% 15% 0% 0%;
+}
+.cursos{
+    width: 95%;
+}
+.perfil{
+    width: 95%;
+}
+b{
+    color: var(--cor-secundaria);
+}
+.ano{
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+    padding: 1% 0% 1% 0%;
+    display: flex;
+    justify-content: center;   
+}
+@media (max-width : 1200px){
+    .contatos{
+        flex-direction: column;
+        gap: 0;
+    }
+    .contato{
+        padding: 1% 0% 0% 0%;
+    }
+    .email{
+        padding: 1% 0% 0% 0%;
+       
+        background-color: red;
+    }
+    .dados{
+        flex-direction: column;
+    }
+    .experiencia{
+        flex-direction: column;
+    }
+    .img{ 
+        width: 1000px;
+        height: 100%;
+    }
+    .pc{
+
+        width: 90%;
+        height: 80%;
+        padding: 0%;
+    }
 }
