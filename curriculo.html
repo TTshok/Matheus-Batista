@@ -8,30 +8,39 @@
     <link rel="stylesheet" href="./style/styleCurri.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="btn_menu">
+            <a class="btn" href="./principal.html">Home</a>
+            <a class="btn" href="./sobreMim.html">Sobre Mim</a>
+            <a class="btn" href="./curriculo.html">Currículo</a>
+        </nav>
+    </header>
     <main class="principal">
-        <section class = "principal_2">
-            <div class="img">
-                <img class="pc" src="https://cdn.dooca.store/1841/products/gb1713_620x620+fill_ffffff.jpg?v=1687361772&webp=0" alt="pc gamer">
+        <section class = "secundario">
+            <div class="fundo_img">
+                <img class="foto" src="https://cdn.dooca.store/1841/products/gb1713_620x620+fill_ffffff.jpg?v=1687361772&webp=0" alt="pc gamer">
             </div>
             <div class="nome_contatos">
-                <h1 class="principal__nome">Matheus Batista da Silva</h1>
+                <h1 class="principal_nome">Matheus Batista da Silva</h1>
                     <div class="contatos">    
-                      
-                        <a class = "contato">
+                        <a class = "num1" href="https://contate.me/ttshok2">
+                            <img src="./assests/phone.png">
                             (92) 99631-0761
                         </a>
-                        <a class="contato">
+                        <a class="num2" href="https://contate.me/ttshok2">
                             (92) 99631-0761
                         </a>
                         </div>
                         <div class="email">
-                            <a>matheusbatista16.mb@gmail.com</a>
+                            <a class="e-mail" href="mailto:matheusbatista16.mb@gmail.com?bcc=matheussilva16.mb@gmail.com&subject=CURRICULO">
+                                <img src="./assests/email.png">
+                                matheusbatista16.mb@gmail.com
+                            </a>
                         </div>
                     </div>
             </div>
         </section>
-        <h3 class = "sub_tema">DADOS PESSOAIS</h3>
+        <h3 class = "tema">DADOS PESSOAIS</h3>
         <section class="dados">
             <div>
                 <p>Manaus - AM - BRASIL</p>
@@ -44,20 +53,20 @@
                 <p>Idade: 23</p>
             </div>
         </section>
-        <h3 class = "sub_tema">OBJETIVOS</h3>
+        <h3 class = "tema">OBJETIVOS</h3>
         <section class="objetivos">
             <p class="objetivos_txt">Procuro colaborar em um ambiente de trabalho, onde eu possa colocar em prática
                 meus conhecimentos em favor da instituição, desenvolvendo minhas habilidades e
                 contribuindo para o crescimento da empresa.</p>
         </section>
-        <h3 class = "sub_tema">FORMAÇÃO ACADÊMICA</h3>
+        <h3 class = "tema">FORMAÇÃO ACADÊMICA</h3>
         <section class="form_acad">
             <div>
                 <p><strong class="ano"> 2017</strong></p>
                 <p>Ensino Médio Completo – Colégio
                 Adventista Paul Bernard</p>
             </div>
-            <div >
+            <div >        <!--gambiarra-->
                 <p class="teste"> <strong class="ano"> 2022</strong></p>
                 <p class="teste">Tecnólogo em Análise e
                     Desenvolvimento de Sistemas -
@@ -65,12 +74,12 @@
                     Amazonas</p>
             </div>
         </section>
-        <h3 class = "sub_tema">EXPERIÊNCIA PROFISSIONAL</h3>
+        <h3 class = "tema">EXPERIÊNCIA PROFISSIONAL</h3>
         <section class="experiencia">
             <div>
                 <p><strong class="ano">2020 - 2021</strong></p>
                 <p><strong>SSP - SECRETÁRIA DE SEGURANÇA PÚBLICA</strong></p>
-                <p class="estagio">Estágio Completo na Secretária de
+                <p class="estagio_txt">Estágio Completo na Secretária de
                     Segurança Pública (SSP) – Setor: TI –</p>
                     <p>Peíodo: 02/12/2020 até 14/09/2021</p>
             </div>
@@ -82,22 +91,22 @@
                     <p>Período: 28/10/2022 até 02/05/2023</p>
             </div>
         </section>
-        <h3 class = "sub_tema">CURSOS PROFISSIONALIZANTES</h3>
+        <h3 class = "tema">CURSOS PROFISSIONALIZANTES</h3>
         <section class="cursos">
             <nav>
-                <li>Python: Começando Com a Linguagem - Ch: 12h - <b>Alura</b></li>
-                <li>Python: Avançando Na Linguagem - Ch: 12h - <b>Alura</b></li>
-                <li>Microsoft Sql Server 2022: Conhecendo Sql - Ch: 16h - <b>Alura</b></li>
-                <li>Microsoft Sql Server 2022: Consultas Avançadas - Ch: 18h - <b>Alura</b></li>
-                <li>C#: Explorando a Linguagem - Ch: 12h - <b>Alura</b></p>
-                <li>C#: Orientação a Objetos - Ch: 08h - <b>Alura</b></p>
-                <li>Fundamentos De Lógica De Programação – Ch: 15h – <b>Fundação Bradesco</b></li>
-                <li>Fundamentos De Ti: Hardware e Software – Ch: 7h – <b>Fundação Bradesco</b></li>
-                <li>Introdução a Rede De Computadores – Ch: 15h – <b>Fundação Bradesco</b></li>
-                <li>Ética No Desenvolvimento De Sistemas – Ch: 8h – <b>Fundação Bradesco</b></li>            
+                <li>Python: Começando Com a Linguagem - Ch: 12h - <b class="instituicao">Alura</b></li>
+                <li>Python: Avançando Na Linguagem - Ch: 12h - <b class="instituicao">Alura</b></li>
+                <li>Microsoft Sql Server 2022: Conhecendo Sql - Ch: 16h - <b class="instituicao">Alura</b></li>
+                <li>Microsoft Sql Server 2022: Consultas Avançadas - Ch: 18h - <b class="instituicao">Alura</b></li>
+                <li>C#: Explorando a Linguagem - Ch: 12h - <b class="instituicao">Alura</b></p>
+                <li>C#: Orientação a Objetos - Ch: 08h - <b class="instituicao">Alura</b></p>
+                <li>Fundamentos De Lógica De Programação – Ch: 15h – <b class="instituicao">Fundação Bradesco</b></li>
+                <li>Fundamentos De Ti: Hardware e Software – Ch: 7h – <b class="instituicao">"Fundação Bradesco</b></li>
+                <li>Introdução a Rede De Computadores – Ch: 15h – <b class="instituicao">Fundação Bradesco</b></li>
+                <li>Ética No Desenvolvimento De Sistemas – Ch: 8h – <b class="instituicao">Fundação Bradesco</b></li>            
             </nav>
         </section>
-        <h3 class = "sub_tema">PERFIL</h3>
+        <h3 class = "tema">PERFIL</h3>
         <section class="perfil">
             <p>Disponível, responsável, dinâmico, capaz de trabalhar em equipe, capacidade de
                 aceitar desafios e assimilar novos conhecimento.</p>

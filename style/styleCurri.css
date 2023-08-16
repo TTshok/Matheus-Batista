@@ -16,7 +16,20 @@ body{
     background-color:var(--cor-primaria);
     color: var(--cor--terciaria);
     font-family: 'Montserrat', sans-serif;
-    
+}
+.cabecalho{
+    padding: 2% 0% 0% 5%;
+}
+.btn_menu{
+    display: flex;
+    gap: 80px;
+}
+.btn{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 .principal{
     width: 95%;/*largura*/
@@ -25,46 +38,59 @@ body{
     flex-direction: column;/*direção dos FlexBox*/
     gap: 20px;
     padding: 5% 5% 5% 5%;
-   
 }
-.img{
+.secundario{
+    display: flex; /*para todos os elementos ficarem flexiveis*/
+    align-items: center; /*para os itens ficarem no centro*/
+    justify-content: flex-start;
+    gap: 10%;
+}
+.fundo_img{
     background-color: var(--cor-secundaria);
     border-radius: 35%;  
     width: 30%;
     height: 20%;
     text-align: center;
 }
-.pc{
+.foto{
     border-radius: 50%;
     width: 80%;
     height: 80%;
     padding: 10%;
 }
-.principal_2{
-    display: flex; /*para todos os elementos ficarem flexiveis*/
-    align-items: center; /*para os itens ficarem no centro*/
-    justify-content: flex-start;
-    gap: 25px;
-}
-.principal__nome{
+.principal_nome{
     font-size: 2.1rem;
 }
 .contatos{
     display: flex;
     gap: 45px;
+    padding: 5% 0% 0% 0%;   
 }
-
-.contato{
+.num1{
     display: flex;
-    flex-direction: column;
-    padding: 3% 0% 0% 0%;
-    
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    gap: 5px;
+    transition: 0.5s all;
+}
+.num2{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: 0.5s all;
 }
 .email{
+    display: flex;
     padding: 5% 0% 0% 0%;
+    transition: 0.5s all;
+}
+.e-mail{
+    display: flex;
+    gap: 5px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
 }
 
-.sub_tema{
+.tema{
     color: var(--cor-primaria);
     width: 95%;
     text-align: center;
@@ -75,58 +101,84 @@ body{
 }
 .dados{
     display: flex;
-    gap: 50%;
+    gap: 28%;
     letter-spacing: normal;
 }
 .objetivos_txt{
-    width: 95%;
-   
+    width: 94%;
 }
 .form_acad{
     display: flex;
     gap: 1%;
     width: 95%;
 }
-.teste{
+.teste{/*gambiarra*/
     padding: 0% 0% 0% 30%;
-}
-
-.experiencia{
-    display: flex;
-    padding: 0% 1% 0% 0%;
-    width: 95%;
-}
-.estagio{
-    padding: 0% 15% 0% 0%;
-}
-.cursos{
-    width: 95%;
-}
-.perfil{
-    width: 95%;
-}
-b{
-    color: var(--cor-secundaria);
 }
 .ano{
     font-weight: bold;
     color: var(--cor-secundaria);
 }
+.experiencia{
+    display: flex;
+    padding: 0% 1% 0% 0%;
+    width: 95%;
+    gap: 11.5%;
+}
+.estagio_txt{
+    padding: 0% 15% 0% 0%;
+}
+.cursos{
+    width: 95%;
+}
+.instituicao{
+    color: var(--cor-secundaria);
+}
+.perfil{
+    width: 95%;
+    text-align: center;
+}
 .rodape{
     color: var(--cor-primaria);
     background-color: var(--cor-secundaria);
     font-family: 'Krona One', sans-serif;
+    font-weight: 400;
     padding: 1% 0% 1% 0%;
     display: flex;
     justify-content: center;   
 }
 @media (max-width : 1200px){
+    /* .principal{
+        padding: 5% 5% 5% %;
+        justify-content: center;
+    } */
+    .cabecalho{
+        padding: 10%;
+        
+    }
+    .btn_menu{
+        justify-content: center;
+        gap: 35px;
+        
+    }
+
+    .principal_2{
+        flex-direction: column;
+        
+    }
+    .principal__nome{
+        padding: 0% 5% 0% 0%;
+    }
     .contatos{
         flex-direction: column;
         gap: 0;
     }
     .contato{
         padding: 1% 0% 0% 0%;
+    }
+    .contato2{
+        padding: 1% 0% 0% 8%;
+       
     }
     .email{
         padding: 1% 0% 0% 0%;
@@ -145,13 +197,19 @@ b{
         flex-direction: column;
     }
     .img{ 
-        width: 100%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
     }
     .pc{
 
-        width: 90%;
-        height: 80%;
+        width: 80%;
+        height: 70%;
         
     }
+}
+.contatos:hover{
+    font-size: 1.2rem;
+}
+.email:hover{
+    font-size: 1.2rem;
 }
