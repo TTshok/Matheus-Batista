@@ -1,0 +1,57 @@
+
+:root{
+    --cor-primaria: #232931;
+    --cor-secundaria:#4ECCA3;
+    --cor--terciaria:#EEEEEE;
+}
+body{
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    display: flex;
+}
+.cabecalho_menu{
+    display: flex;
+}
+.principal{
+    display: flex;
+    padding: 5%;
+}
+.painel.txt{
+    display: flex;
+    
+}
+.acesso{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    gap: 32px;
+    /* background-color: red; */
+    
+}
+.btn_redes{
+    display: flex;
+    align-items: center;
+    padding: 3% 5% 3% 4%;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--cor--terciaria);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    gap: 8px;
+    /* background-color: green; */
+}
+.foto_fundo{
+    display:flex;
+    justify-content:flex-end;
+    width: 100%;
+    height: 100%;
+    background-color:var(--cor-secundaria);
+}
+.foto{
+    width: 60%;
+    margin: 20% 18% 0% 0%;
+    border-radius: 300px 300px 0px 0px;
+    border: 2px solid var(--cor--terciaria);
+}
