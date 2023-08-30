@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@600&display=swap');
 
 :root{
     --cor-primaria: #232931;
@@ -6,29 +9,57 @@
 }
 body{
     height: 100vh;
+
     background-color: var(--cor-primaria);
-    display: flex;
+    font-family: 'Krona One', sans-serif;
+    
+
+}
+.cabecalho{
+    padding: 2% 0% 0% 5%;
+    
 }
 .cabecalho_menu{
     display: flex;
+    gap: 35px;
+}
+.btn_menu{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
 }
 .principal{
     display: flex;
-    padding: 5%;
+    padding: 0% 0% 0% 5%;
+
+    /* background-color: green; */
 }
-.painel.txt{
-    display: flex;
+
+.painel_txt{
+    width: 50%;
+    /* background-color: green; */
+    padding: 2% 0% 0% 0%;
+    /* background-color: red; */
     
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--cor--terciaria);
 }
 .acesso{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 5%;
+    padding: 10% 0% 0% 0%;
+    /* margin: 40% 0% 0% 0%; */
     gap: 32px;
-    /* background-color: red; */
-    
+    /* background-color: green; */
+    color: var(--cor--terciaria);
 }
 .btn_redes{
     display: flex;
@@ -40,18 +71,77 @@ body{
     border: 2px solid var(--cor-secundaria);
     border-radius: 10px;
     gap: 8px;
-    /* background-color: green; */
+    transition: 0.5s;
+
 }
 .foto_fundo{
     display:flex;
-    justify-content:flex-end;
-    width: 100%;
-    height: 100%;
-    background-color:var(--cor-secundaria);
+    justify-content: center;
+    /* background-color:var(--cor-secundaria); */
 }
 .foto{
+    display: flex;
+    align-items: center;
+    margin: 0% 15% 0% 0%;
     width: 60%;
-    margin: 20% 18% 0% 0%;
-    border-radius: 300px 300px 0px 0px;
-    border: 2px solid var(--cor--terciaria);
+    border-radius: 300px;
+    border: 3px solid var(--cor-secundaria);
+    transition: 0.5s;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrast', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    padding: 0.5% 0% 0.5% 0%;
+    background-color: var(--cor-secundaria);
+    /* teste */
+    margin: 10% 0% 0% 0%;
+}
+.teste{
+    text-align: center;
+    position:absolute;
+    margin: 21% 0% 0% 0%;
+    width: 100%;
+}
+.txt__sobremim{
+    /* background-color: red; */
+    width: 100%;
+}
+.linguagem{
+    color: var(--cor-secundaria);
+}
+
+@media (max-width: 1150px){
+    .cabecalho{
+        width: 100%;
+        margin: 0% 0% 0% 0%;
+    }
+    .cabecalho_menu{
+        justify-content: left;
+        /* gap: 45px; */
+        padding: 5% 10% 0% 0%;
+        
+    }
+    .btn_menu{
+        font-size: 1.2rem;
+    }
+
+    .principal{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .foto_fundo{
+        padding: 20% 0% 5% 8%;
+    }
+    
+}
+.btn_redes:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+.foto:hover{
+    border: 5px solid var(--cor-secundaria);
 }

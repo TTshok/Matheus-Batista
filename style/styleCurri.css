@@ -18,18 +18,25 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 .cabecalho{
-    padding: 2% 0% 0% 5%;
+    display: flex;
+    
+    width: 90%;
+    /* background-color: red; */
+    margin: 0 auto;
+    padding: 2em 0;
+    /* padding: 2% 0% 0% 5%; */
 }
 .btn_menu{
     display: flex;
     gap: 80px;
+    
 }
 .btn{
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
 }
 .principal{
     width: 95%;/*largura*/
@@ -148,22 +155,25 @@ body{
     justify-content: center;   
 }
 @media (max-width : 1200px){
-    /* .principal{
-        padding: 5% 5% 5% %;
-        justify-content: center;
-    } */
+    
     .cabecalho{
-        padding: 10%;
-        
+
+        width: 100%;
+        margin: 0% 0% 0% 0%;
     }
     .btn_menu{
-        justify-content: center;
-        gap: 35px;
+        justify-content: left;
+        gap: 45px;
+        padding: 1% 5% 0% 5%;
         
     }
+    .btn{
+        font-size: 1.2rem;
+    }
 
-    .principal_2{
+    .secundario{
         flex-direction: column;
+
         
     }
     .principal__nome{
@@ -173,12 +183,15 @@ body{
         flex-direction: column;
         gap: 0;
     }
-    .contato{
+    .num1{
         padding: 1% 0% 0% 0%;
     }
-    .contato2{
+    .num2{
         padding: 1% 0% 0% 8%;
        
+    }
+    .principal_nome{
+        width: 95%;
     }
     .email{
         padding: 1% 0% 0% 0%;
