@@ -6,9 +6,9 @@
     padding: 0;
 }
 :root{
-    --cor-primaria: #232931;
-    --cor-secundaria:#4ECCA3;
-    --cor--terciaria:#EEEEEE;
+    --cor-primaria: #160f31;
+    --cor-secundaria:#03C988;
+    --cor--terciaria:#F1F0E8;
 }
 body{
     height: 100vh;/*altura de 100% o VH é viewport elementos adequados a cada proporção*/
