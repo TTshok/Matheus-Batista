@@ -25,6 +25,7 @@ body{
     margin: 0 auto;
     padding: 2em 0;
     /* padding: 2% 0% 0% 5%; */
+    
 }
 .btn_menu{
     display: flex;
@@ -37,6 +38,22 @@ body{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
     font-size: 2.2rem;
+}
+.baixar{
+    
+    margin-left: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+.baixar__curriculo{
+    
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    
 }
 .principal{
     width: 95%;/*largura*/
@@ -157,7 +174,8 @@ body{
 @media (max-width : 1200px){
     
     .cabecalho{
-
+        flex-direction: column;
+        gap: 0;
         width: 100%;
         margin: 0% 0% 0% 0%;
     }
@@ -170,6 +188,13 @@ body{
     .btn{
         font-size: 1.2rem;
     }
+    .baixar{
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 1em;
+        
+    }
+
 
     .secundario{
         flex-direction: column;
@@ -225,4 +250,7 @@ body{
 }
 .email:hover{
     font-size: 1.2rem;
+}
+.baixar__curriculo:hover{
+    color: var(--cor--terciaria);
 }
